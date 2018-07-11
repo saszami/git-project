@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,700');
+
+@font-face {
+    font-family: 'LMRSlanted-10-Rg';
+    src: url('../font/lmromanslant10-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  min-width: 1600px;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: 'LMRSlanted-10-Rg', serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h1, h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 30px;
+}
+
+h1 strong, h2 strong {
+  font-weight: 700;
+}
+
+section {
+  padding-top: 50px;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+
+
+/* первый блок */
+.header {
+  min-height: 750px;
+  margin-top: 50px;
+  background: url("../img/promo-bg.png") no-repeat center center,
+              url("../img/letter-A.png") no-repeat 10px bottom;
+  background-color: #efefef;
+}
+
+.header-top {
+  padding-top: 40px;
+  padding-right: 60px;
+}
+
+.header-menu {
+  float: right;
+}
+
+/* BURGER MENU */
+.wrapper {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  color: #000;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#check-menu {
+  display: none;
+}
+
+label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 18px;
+}
+
+.burger-line {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  width: 19px;
+  height: 1px;
+  background-color: #221815;
+  transition: .5s all;
+}
+
+.second, .third {
+  top: 9px;
+}
+
+.fourth {
+  top: 16px;
+}
+
+.main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: .5s all;
+}
+
+a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,.3);
+  background-color: #000;
+}
+
+a:hover {
+  background-color: #909090;
+}
+
+#check-menu:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+
+#check-menu:checked ~ .first {
+  display: none;
+}
+
+#check-menu:checked ~ .second {
+  transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third {
+  transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth {
+  display: none;
+}
+
+/* конец бургер-меню  */
+
+.header-promo {
+  padding-top: 180px;
+  padding-left: 180px;
+}
+
+.header-promo p {
+  position: relative;
+}
+
+.header-promo p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 45px;
+  margin-left: 5px;
+  width: 1px;
+  height: 80px;
+  background: #343434;
+}
+
+
+
+/* второй блок */
+.about-me {
+  min-height: 750px;
+  padding-left: 690px;
+  padding-top: 180px;
+  background: url("../img/photoapp.png") no-repeat 35px 50px,
+              url("../img/letter-P.png") no-repeat 90px bottom;
+  background-color: #efefef;
+}
+
+.about-me h2 {
+  padding-left: 120px;
+  position: relative;
+}
+
+.about-me h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 1px;
+  left: 0;
+  top: 15px;
+  background: #343434;
+}
+
+.social-links {
+  margin-top: 70px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 20px;
+  background-color: #909090;
+}
+
+.social-links a:hover {
+  background-color: #020202;
+}
+
+.social-links .facebook {
+  background: url("../img/icons/facebook.svg") no-repeat center center #909090;
+  background-size: 10px 18px;
+}
+
+.social-links .instagram {
+  background: url("../img/icons/instagram.svg") no-repeat center center #909090;
+  background-size: 18px 18px;
+}
+
+.social-links .twitter {
+  background: url("../img/icons/twitter.svg") no-repeat center center #909090;
+  background-size: 20px 17px;
+}
+
+.social-links .pinterest {
+  background: url("../img/icons/pinterest.svg") no-repeat center center #909090;
+  background-size: 17px 18px;
+}
+
+
+/* третий блок */
+.gallery-big {
+  position: relative;
+}
+
+.gallery-big::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 750px;
+  width: 100%;
+  background: url("../img/letter-O_1.png") no-repeat left bottom;
+  z-index: 1010;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background: #ffffff;
+  top: 340px;
+  z-index: 10001;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.arrow-left {
+ z-index: 10002;
+  left: 50px;
+  background: url("../img/icons/arrow-left.svg") no-repeat center center #ffffff;
+}
+
+.arrow-right {
+  right: 50px;
+  background: url("../img/icons/arrow-right.svg") no-repeat center center #ffffff;
+}
+
+
+/* четвертый блок  */
+.more-about-me {
+  min-height: 750px;
+  background: url("../img/letter-L.png") no-repeat 90px bottom;
+  background-color: #efefef;
+}
+
+.differ {
+  float: left;
+}
+
+.images {
+  float: right;
+  margin-top: 150px;
+  margin-right: 90px;
+}
+
+
+/* пятый блок */
+.gallery-small {
+  min-height: 750px;
+  background: url("../img/letter-L.png") no-repeat 90px bottom;
+  background-color: #efefef;
+  position: relative;
+}
+/* СТИЛИ ДЛЯ ГАЛЕРЕИ */
+.main {
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+#side1 {
+    height: 360px;
+    width: 540px;
+    position: absolute;
+    transform: translateX(0px) scale(1.25);
+    z-index: 99;
+    transition: all .5s;
+}
+#side2 {
+    height: 360px;
+    width: 540px;
+    position: absolute;
+    transform: translateX(-395px);
+    z-index: 9;
+    transition: all .5s;
+}
+#side3 {
+    height: 360px;
+    width: 540px;
+    position: absolute;
+    transform: translateX(400px);
+    z-index: 9;
+    transition: all .5s;
+}
+
+/* последний блок */
+.feedback {
+  min-height: 750px;
+  margin-bottom: 55px;
+  background: url("../img/letter-O_2.png") no-repeat left bottom;
+  background-color: #efefef;
+}
+
+.feedback-text {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.feedback-form {
+  margin: 0;
+  text-align: center;
+  padding-left: 460px;
+  padding-right: 460px;
+}
+
+input, textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  border: 1px solid #020202;
+  padding: 15px 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  margin-top: 30px;
+  padding: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+input[type="submit"]:hover {
+  background-color: #909090;
+  border-color: #909090;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  height: 45px;
+  width: 272px;
+}
+
+input[type="text"]:first-child {
+  margin-right: 30px;
+}
+
+input[type="text"]::placeholder {
+  color: #000000;
+}
+
+textarea {
+  margin-top: 30px;
+}
+
+textarea::placeholder {
+  color: #000000;
+}
+
+textarea:hover, textarea:focus, input[type="text"]:hover, input[type="text"]:focus   {
+  border-color: #909090;
+}
