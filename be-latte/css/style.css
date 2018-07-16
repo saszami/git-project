@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900&subset=cyrillic');
+
+@font-face {
+	font-family: 'Lato-Reg';
+	src: url('../fonts/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato-Reg", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #ffffff;
+  color: #28211f;
+}
+
+.container {
+	max-width: 97rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*   MAIN - HERO   */
+.hero {
+	min-height: 70rem;
+	max-width: 127rem;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	background: url("../img/main-bg.jpg") no-repeat center center;
+	background-size: auto 100%;
+	position: relative;
+	z-index: 1;
+}
+.hero::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 50%;
+	transform: translateX(50%);
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.45);
+}
+/* menu background */
+.hero::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10rem;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.35);
+	z-index: -1;
+}
+
+.hero-content {
+	max-width: 45rem;
+	padding-top: 18rem;
+}
+.hero-content > h1 {
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 4.8rem;
+	line-height: 1;
+	color: #f5d76e;
+}
+.hero-content > p {
+	color: #ffffff;
+	margin-top: 2.5rem;
+}
+
+
+.btn {
+	max-width: 18.5rem;
+	height: 5.4rem;
+	margin-top: 3.2rem;
+	text-align: center;
+	font-family: "Lato-Bold", sans-serif;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	border: 0.2rem solid #ffffff;
+	cursor: pointer;
+}
+.btn_inline {
+	line-height: 5.4rem;
+	color: #ffffff;
+}
+
+
+/* main nav-menu */
+ul {
+	position: relative;
+	max-width: 94rem;
+	height: 13rem;
+	margin: 0;
+	padding: 0;
+	padding-left: 12rem;
+	text-align: center;
+	z-index: 1;
+}
+
+ul li {
+	display: inline-block;
+	margin-right: 2rem;
+	padding-top: 4rem;
+	vertical-align: top;
+}
+
+li.logo {
+	padding-top: 0.5rem;
+	margin-right: 3.5rem;
+	margin-left: 2rem;
+}
+
+ul li a {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+li:first-child a {
+	font-weight: 700;
+	color: #f5d76e;
+}
+
+/* section tasty */
+
+.slogan {
+	text-align: center;
+	margin-top: 10rem;
+	margin-bottom: 8rem;
+}
+
+.slogan h3 {
+	font-family: "Playfair Display", serif;
+	color: #2f2e2e;
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
+h3 span {
+	font-weight: 900;
+	position: relative;
+}
+
+h3 span::before {
+	content: "";
+	position: absolute;
+	height: 0.2rem;
+	width: 92%;
+	background-color: #2f2e2e;
+	left: 0;
+	bottom: 0;
+}
+
+
+/* section with menu*/
+.section-title {
+	font-family: "Playfair Display", serif;
+	font-size: 3.2rem;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 6rem;
+	color: #2f2f2f;
+}
+
+.divider {
+	width: 4rem;
+	height: 4rem;
+	background: url("../img/coffee-icon-divider.svg") no-repeat center center;
+	margin: 7rem auto 6rem auto;
+}
+
+.btn_white {
+	margin: 0 auto;
+	width: 23rem;
+	border-color: #39312f;
+}
+.btn_inline_white {
+	color: #39312f;
+}
+
+.menu {
+	max-width: 130rem;
+	margin: 0 auto;
+}
+
+.menu_item {
+	max-width: 39.7rem;
+	min-height: 45rem;
+	float: left;
+	margin-right: 3rem;
+}
+.menu_item:last-child {
+	margin-right: 0;
+}
+
+table {
+	border: 1px solid black;
+}
+
+td:first-child {
+	font-family: "Lato-Bold";
+}
