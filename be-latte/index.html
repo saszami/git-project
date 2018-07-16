@@ -4,56 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Кофейня Be Latte</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <main>
-    <div class="container">
-      <div class="welcome">
-        <div class="header">
-          <div class="header-menu">
-            <ul class="menu">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Меню</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Контакты</a></li>
-              <img src="" alt="Be Latte" class="logo">
-            </ul>
-          </div>
+
+<main class="hero">
+  <div class="container">
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li  class="logo"><img src="img/be-latte_logo.png" alt="Be Latte"></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to Be Latte</h1>
+      <p>Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.</p>
+      <div class="btn"><a href="#" class="btn_inline">See menu</a></div>
+    </div>
+  </div>
+</main>
+
+<section class="tasty">
+  <div class="container">
+    <div class="slogan">
+          <h3>Coffee never tasted <span>so good!</span></h3>
+          <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+    </div>
+  </div>
+</section>
+
+
+<section>
+    <div class="divider"></div>
+    <h2 class="section-title">Menu</h2>
+    <div class="menu clearfix">
+      <div class="menu_item">
+        <div class="menu_item_photo">
+          <img src="img/menu-item-1.jpg" alt="coffee">
         </div>
-        <div class="main-content">
-          <h1 class="main-title">Добро пожаловать в Be Latte</h1>
-          <p>Enjoy of a fresh new approach to coffee. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <button class="btn">See menu</button>
+        <div class="menu_item_price">
+          <table>
+            <tr>
+              <td>Latte</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Mocha</td>
+              <td>$3.25</td>
+            </tr>
+            <tr>
+              <td>Expresso</td>
+              <td>$3.75</td>
+            </tr>
+            <tr>
+              <td>Capuccino</td>
+              <td>$3.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="menu_item">
+        <div class="photo_item_photo">
+          <img src="img/menu-item-2.jpg" alt="tea">
+        </div>
+        <dib class="menu_item_price">
+          <table>
+            <tr>
+              <td>Iced teal</td>
+              <td>$2.75</td>
+            </tr>
+            <tr>
+              <td>Cold brew</td>
+              <td>$3.25</td>
+            </tr>
+            <tr>
+              <td>Jasmine green</td>
+              <td>$3.75</td>
+            </tr>
+            <tr>
+              <td>Peppermint Herba</td>
+              <td>$3.00</td>
+            </tr>
+          </table>
+        </dib>
+      </div>
+      <div class="menu_item">
+        <div class="photo_item_photo">
+          <img src="img/menu-item-3.jpg" alt="desserts">
+        </div>
+        <div class="photo_item_price">
+          <table>
+            <tr>
+              <td>Tiramisu</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Cheese cake</td>
+              <td>$3.25</td>
+            </tr>
+            <tr>
+              <td>Black forest</td>
+              <td>$3.75</td>
+            </tr>
+            <tr>
+              <td>Brownie</td>
+              <td>$3.00</td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
-  </main>
-
-  <section>
-    <div class="container">
-      <div class="slogan">
-        <h3>Coffee never tasted <span>so good</span>!</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <section>
-    <div class="container">
-      <div class="divider"></div>
-      <h2>Menu</h2>
-      <div class="menu">
-        <div class="menu_item"></div>
-        <div class="menu_item"></div>
-        <div class="menu_item"></div>
-        <button class="btn">See full menu</button>
-      </div>
-    </div>
-  </section>
+    <div class="btn btn_white"><a class="btn_inline btn_inline_white">See full menu</a></div>
+    
+</section>
 
 </body>
 </html>
