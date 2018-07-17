@@ -31,7 +31,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   background: #ffffff;
-  color: #28211f;
+  color: #28211f; 
 }
 
 .container {
@@ -202,7 +202,7 @@ h3 span::before {
 
 .btn_white {
 	margin: 0 auto;
-	width: 23rem;
+	max-width: 23.4rem;
 	border-color: #39312f;
 }
 .btn_inline_white {
@@ -215,19 +215,70 @@ h3 span::before {
 }
 
 .menu_item {
-	max-width: 39.7rem;
+	max-width: 40rem;
 	min-height: 45rem;
 	float: left;
+	margin-bottom: 6rem;
 	margin-right: 3rem;
 }
+
 .menu_item:last-child {
 	margin-right: 0;
 }
 
+.menu_item_price {
+	margin-top: 3.6rem;
+}
+
 table {
-	border: 1px solid black;
+	margin: 0 auto;
+	max-width: 23rem;
+}
+
+td {
+	padding: 0;
 }
 
 td:first-child {
 	font-family: "Lato-Bold";
+	width: 18rem;
 }
+
+
+/* украшательства пошли*/
+
+.menu_item_photo {
+	position: relative;
+	max-height: 29.5rem;
+}
+
+.menu_item_photo p {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-family: "Playfair Display", sans;
+	font-size: 4rem;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #000000;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.menu_item_photo::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(236,236,236,0.85);
+}
+
+.menu_item_photo:hover::after {
+	background-color: rgba(245,215,110,0.85);
+}
+
+
+/* section testimonials*/
