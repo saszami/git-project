@@ -116,7 +116,7 @@ body {
 
 
 /* main nav-menu */
-ul {
+ul.nav {
 	position: relative;
 	max-width: 94rem;
 	height: 13rem;
@@ -127,7 +127,7 @@ ul {
 	z-index: 1;
 }
 
-ul li {
+ul.nav li {
 	display: inline-block;
 	margin-right: 2rem;
 	padding-top: 4rem;
@@ -140,13 +140,13 @@ li.logo {
 	margin-left: 2rem;
 }
 
-ul li a {
+ul.nav li a {
 	font-family: "Playfair Display", serif;
 	font-weight: 700;
 	color: #ffffff;
 }
 
-li:first-child a {
+ul.nav li:first-child a {
 	font-weight: 700;
 	color: #f5d76e;
 }
@@ -230,16 +230,16 @@ h3 span::before {
 	margin-top: 3.6rem;
 }
 
-table {
+.price {
 	margin: 0 auto;
 	max-width: 23rem;
 }
 
-td {
+.price td {
 	padding: 0;
 }
 
-td:first-child {
+.price td:first-child {
 	font-family: "Lato-Bold";
 	width: 18rem;
 }
@@ -282,3 +282,61 @@ td:first-child {
 
 
 /* section testimonials*/
+
+.testimonials {
+	max-width: 127rem;
+	min-height: 42.5rem;
+	margin: 0 auto;
+	background: url("../img/bg-tasty.jpg") no-repeat 0 top #39312f;
+}
+
+.feedback-slider {
+	max-width: 46rem;
+	min-height: 42.5rem;
+	float: right;
+	background-color: #39312f;
+	text-align: center;
+}
+
+.feedback-slider::before {
+	content: ".01";
+	font-family: "Playfair Display";
+	color:  #433c3b;
+	font-size: 9rem;
+	font-weight: 700;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 3rem;
+}
+.feedback-slider::after {
+	content: "”";
+	font-family: "Playfair Display";
+	color:  #433c3b;
+	font-size: 20rem;
+	font-weight: 700;
+	line-height: 0.25;
+	position: absolute;
+	bottom: 0;
+	right: 3rem;
+}
+
+
+.slider_item {
+	padding: 9rem 9rem 2rem 10rem;
+}
+
+.feedback-slider p {
+	max-width: 26.5rem;
+	color: #ffffff;
+	line-height: 1.2;
+	margin: 1rem auto 4ren auto;
+}
+
+.customer-name {
+	font-family: "Playfair Display", serif;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #f5d76e;
+}
+
