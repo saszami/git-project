@@ -232,12 +232,16 @@ h3 span::before {
 .menu {
 	max-width: 130rem;
 	margin: 0 auto;
+	display: -webkit-flex; 
+	display: flex; /*отображает контейнер как блочный элемент*/
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
 }
 
 .menu_item {
 	max-width: 40rem;
 	min-height: 45rem;
-	float: left;
 	margin-bottom: 6rem;
 	margin-right: 3rem;
 }
@@ -498,7 +502,7 @@ color: #2f2f2f;
 	.nav {
 		padding-left: 6rem;
 	}
-	.menu {
+/*	.menu {
 		margin: 0 10%;
 	}
 	.menu_item:nth-child(even) {
@@ -506,7 +510,7 @@ color: #2f2f2f;
 	}
 	.menu_item:nth-child(3) {
 		clear: left;
-	}
+	}*/
 
 }
 @media (max-width: 769px) {
@@ -524,7 +528,7 @@ color: #2f2f2f;
 		margin-left: 2rem;
 		margin-top: 0.5rem;
 	}
-	.menu {
+	/*.menu {
 		margin: 0 auto;
 	}
 
@@ -539,7 +543,7 @@ color: #2f2f2f;
 	.menu_item:nth-child(3) {
 		float: none;
 		display: block;
-	}
+	}*/
 	.testimonials {
 		background: none;
 		background-color: #39312f;
