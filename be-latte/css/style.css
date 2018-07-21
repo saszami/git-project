@@ -221,7 +221,7 @@ h3 span::before {
 }
 
 .btn_white {
-	margin: 0 auto;
+	margin: 6rem auto 0 auto;
 	max-width: 23.4rem;
 	border-color: #39312f;
 }
@@ -236,18 +236,13 @@ h3 span::before {
 	display: flex; /*отображает контейнер как блочный элемент*/
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: space-around;
+	align-content: space-around; 
 }
 
 .menu_item {
-	max-width: 40rem;
-	min-height: 45rem;
-	margin-bottom: 6rem;
-	margin-right: 3rem;
-}
-
-.menu_item:last-child {
-	margin-right: 0;
+	max-width: 43rem;
+	min-height: 48rem;
+	padding: 1.5rem;
 }
 
 .menu_item_photo img {
@@ -257,7 +252,7 @@ h3 span::before {
 }
 
 .menu_item_price {
-	margin-top: 3.6rem;
+	margin: 3.6rem 0;
 }
 
 .price {
@@ -502,16 +497,6 @@ color: #2f2f2f;
 	.nav {
 		padding-left: 6rem;
 	}
-/*	.menu {
-		margin: 0 10%;
-	}
-	.menu_item:nth-child(even) {
-		float: right;
-	}
-	.menu_item:nth-child(3) {
-		clear: left;
-	}*/
-
 }
 @media (max-width: 769px) {
 	.container {
@@ -528,22 +513,6 @@ color: #2f2f2f;
 		margin-left: 2rem;
 		margin-top: 0.5rem;
 	}
-	/*.menu {
-		margin: 0 auto;
-	}
-
-	.menu_item {
-		float: none;
-		margin-right: auto;
-		margin-left: auto;
-	}
-		.menu_item:nth-child(even) {
-		float: none;
-	}
-	.menu_item:nth-child(3) {
-		float: none;
-		display: block;
-	}*/
 	.testimonials {
 		background: none;
 		background-color: #39312f;
